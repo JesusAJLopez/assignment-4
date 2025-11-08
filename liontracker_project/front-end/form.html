@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add / Update Animal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Lion Tracker 🦁</h1>
+    <nav>
+      <a href="index.html">Animal List</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="animal-form-section">
+      <h2 id="formTitle">Add New Animal</h2>
+      <form id="animalForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="text" id="photo" placeholder="Photo URL" required>
+        <textarea id="description" placeholder="Long Description" required></textarea>
+        <button type="submit">Save Animal</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lion Tracker</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const animalId = urlParams.get('id');
+
+    if(animalId){
+      document.getElementById('formTitle').innerText = 'Update Animal';
+      loadAnimalForEdit(animalId);
+    }
+
+    document.getElementById('animalForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      saveAnimal(animalId);
+    });
+  </script>
+</body>
+</html>

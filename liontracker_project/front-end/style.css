@@ -1,0 +1,19 @@
+body { font-family: 'Segoe UI', sans-serif; background: #f0f8ff; margin:0; padding:0; }
+header { background:#00695c; color:white; padding:20px; text-align:center; }
+nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+main { max-width:1000px; margin:30px auto; padding:0 20px; }
+footer { text-align:center; padding:10px; background:#e0f7fa; }
+
+.card-container { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
+.animal-card { background:white; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); padding:10px; text-align:center; }
+.animal-card img { width:100%; height:150px; object-fit:cover; border-radius:5px; }
+.animal-card h3 { margin:10px 0 5px; }
+.animal-card p { color:#555; margin:5px 0; }
+.animal-card a { display:inline-block; margin:5px; color:#00695c; text-decoration:none; font-weight:bold; }
+.animal-card a:hover { text-decoration:underline; }
+
+.animal-form-section form { display:flex; flex-direction:column; gap:10px; }
+.animal-form-section input, .animal-form-section textarea { padding:10px; font-size:16px; border-radius:5px; border:1px solid #ccc; }
+.animal-form-section button { padding:10px; background:#00695c; color:white; border:none; border-radius:5px; cursor:pointer; }
+.animal-form-section button:hover { background:#004d40; }
