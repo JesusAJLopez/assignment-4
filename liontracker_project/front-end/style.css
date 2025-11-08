@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #00695c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .add-lion form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .add-lion input {
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-lion button {
+    padding: 10px 20px;
+    background-color: #00695c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-lion button:hover {
+    background-color: #004d40;
+  }
+  
+  /* Lion cards */
+  .lion-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .lion-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .lion-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .lion-card h3 {
+    margin: 10px 0 5px 0;
+  }
+  
+  .lion-card p {
+    margin: 0;
+    color: #555;
+  }
+  
+  /* About page */
+  .about p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #e0f7fa;
+    margin-top: auto;
+  }
+
+  
